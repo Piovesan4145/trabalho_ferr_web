@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8" /> <!--É importante estar com este charset para utilizar caracteres especiais-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contato</title>
+  <title>Obrigado!</title>
   <style>
+    /*Este body define como será a fonte do site*/
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -40,7 +41,7 @@
       display: inline-block;
       transition: background-color 0.3s;
     }
-
+    /*Este hover serve para dar um destaque na opção selecionada*/
     nav a:hover {
       background-color: #e7b84a;
     }
@@ -83,7 +84,7 @@
 </head>
 <body>
   <header>
-    <h1>Portfólio Pessoal</h1>
+    <h1>Obrigado por responder este formulário</h1>
   </header>
 
   <nav>
@@ -93,44 +94,14 @@
     <a href="contato.html">Contato</a>
   </nav>
 
+ <!--A tag main serve para herdar o main da tag style, ao invés de digitar a class em cada tag basta colocar todo o conteúdo dentro da tag que possui os estilos-->
   <main>
-
+    
+    <!--A tag section vai aplicar um estilo a mais, ou seja, vai herdar tanto o estilo do main e também do section-->
     <section>
-  <h3>Contato</h3>
-  <form id="formularioContato">
-    <!--Campo para digitar o nome-->
-    <label for="nome">Nome:</label><br>
-    <input type="text" id="nome" name="nome" required><br><br>
+      <h3>Caso queira voltar clique nos botões acima</h3>
 
-    <!--Campo para digitar o email-->
-    <label for="email">E-mail:</label><br>
-    <input type="email" id="email" name="email" required><br><br> <!--Como foi definido o type email uma verificação já é realizada para validar o texto-->
 
-    <!--Campo para digitar a mensagem-->
-    <label for="mensagem">Mensagem:</label><br>
-    <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
-
-    <button type="submit">Enviar</button>
-  </form>
-</section>
-
-<script>
-  // Captura o evento do envio do formulário
-  document.getElementById("formularioContato").addEventListener("submit", function(event){
-    event.preventDefault(); // cancela o envio real
-    window.location.href = "obrigado.html"; // redireciona para a página de obrigado
-  });
-</script>
-
-  </section>
-
-    <section>
-      <h3>Caso ocorra algum erro:</h3>
-      <ul>
-        <li>Luís Gustavo Piovesan</li>
-        <li>luisgustavopiovesan@gmail.com</li>
-      </ul>
-    </section>
   </main>
 
   <footer>
