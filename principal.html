@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formação</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    /* Menu */
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #45a049;
+    }
+
+    /* Conteúdo principal */
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfólio pessoal</h1>
+  </header>
+
+  <nav>
+    <a href="principal.html">Início</a>
+    <a href="reciclar.html">Por que reciclar</a>
+    <a href="senai.html">SENAI</a>
+    <a href="forms.html">Pesquisa de satisfação</a>
+  </nav>
+
+  <main>
+    <h2>Bem-vindo ao nosso site!</h2>
+    <p style="text-align: center;">Este site é um projeto institucional para integrar uma parte da sociedade com a tecnologia, por este motivo este site é um informativo sobre a reciclagem para difundir os benefícios deste ato muito benéfico para o meio ambiente e todos nós.</p>
+  </main>
+
+  <footer>
+    © 2025 “Nome do Site” - Desenvolvido por Luís Gustavo Piovesan.
+  </footer>
+
+  <script>
+    // Exemplo simples de destaque ao clicar em um item do menu
+    const links = document.querySelectorAll("nav a");
+    links.forEach(link => {
+      link.addEventListener("click", function () {
+        links.forEach(l => l.style.backgroundColor = "");
+        this.style.backgroundColor = "#45a049";
+      });
+    });
+  </script>
+</body>
+</html>

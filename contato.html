@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #1115d8;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    /* Menu */
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #e7b84a;
+    }
+
+    /* Conteúdo principal */
+    main {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      color: #000000;
+      border-bottom: 2px solid #25109c;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfólio Pessoal</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Sobre mim</a>
+    <a href="formacao.html">Formação</a>
+    <a href="port.html">Portfólio</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <main>
+
+    <!-- Formulário -->
+  <section>
+    <h3>Contato</h3>
+    <form action="#" method="post"> <!--A ação serve para salvar os dados em outro lugar por exemplo, o method post não salva os dados na URL, trazendo mais segurança-->
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome" required><br><br>
+
+      <label for="email">E-mail:</label><br>
+      <input type="email" id="email" name="email" required><br><br> <!--Como foi definido email, será realizado a verificação se possui @-->
+
+      <label for="mensagem">Mensagem:</label><br> <!--A caixa de texto terá um tamanho de 5 linhas-->
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+    <section>
+      <h3>Caso ocorra algum erro:</h3>
+      <ul>
+        <li>Luís Gustavo Piovesan</li>
+        <li>luisgustavopiovesan@gmail.com</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Portfólio Pessoal - Desenvolvido por Luís Gustavo Piovesan.
+  </footer>
+
+</body>
+</html>

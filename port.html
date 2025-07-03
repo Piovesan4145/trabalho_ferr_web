@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" /> <!--É importante estar com este charset para utilizar caracteres especiais-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre mim</title>
+  <style>
+    /*Este body define como será a fonte do site*/
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #1115d8;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    /* Menu */
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+    /*Este hover serve para dar um destaque na opção selecionada*/
+    nav a:hover {
+      background-color: #e7b84a;
+    }
+
+    /* Conteúdo principal */
+    main {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      color: #000000;
+      border-bottom: 2px solid #25109c;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfólio Pessoal</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Sobre mim</a>
+    <a href="formacao.html">Formação</a>
+    <a href="port.html">Portfólio</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+ <!--A tag main serve para herdar o main da tag style, ao invés de digitar a class em cada tag basta colocar todo o conteúdo dentro da tag que possui os estilos-->
+  <main>
+    
+    <!--A tag section vai aplicar um estilo a mais, ou seja, vai herdar tanto o estilo do main e também do section-->
+    <section>
+      <a href="https://piovesan4145.github.io/portfolio_trabalho/" target="_blank"> <h3>Clique aqui para visitar meu portfólio</h3>
+      </a>
+     
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Portfólio Pessoal - Desenvolvido por Luís Gustavo Piovesan.
+  </footer>
+
+</body>
+</html>
